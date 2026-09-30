@@ -1,6 +1,6 @@
 # TP CI/CD — pipeline GitHub Actions
 
-[![CI](https://github.com/AlexRovere/cicd-tp/actions/workflows/ci.yml/badge.svg)](https://github.com/AlexRovere/cicd-tp/actions/workflows/ci.yml)
+[![CI](https://github.com/AlexRovere/github-actions-ci-tp/actions/workflows/ci.yml/badge.svg)](https://github.com/AlexRovere/github-actions-ci-tp/actions/workflows/ci.yml)
 
 TP du cours CI/CD : mettre en place l'intégration continue d'une petite API Node.js fournie par le formateur ([coaxial/cicd-tp](https://github.com/coaxial/cicd-tp)).
 
