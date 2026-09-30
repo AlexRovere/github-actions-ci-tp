@@ -4,13 +4,13 @@
 
 TP du cours CI/CD : mettre en place l'intégration continue d'une petite API Node.js fournie par le formateur ([coaxial/cicd-tp](https://github.com/coaxial/cicd-tp)).
 
-**Ma contribution** : le workflow [`.github/workflows/ci.yml`](.github/workflows/ci.yml), construit par pull requests successives.
+**Ma contribution** : le workflow [`.github/workflows/ci.yml`](.github/workflows/ci.yml) et les tests, construits par pull requests successives.
 
-- Déclenchement sur push et pull request vers `master`
-- Matrice **Ubuntu / Windows / macOS**
-- Version de Node lue depuis `.nvmrc`, installation reproductible avec `npm ci`
-- Tests Jest (unitaires, intégration, end-to-end) puis lint ESLint
-
+- Déclenchement sur push et pull request vers `master`, ou à la demande
+- Version de Node lue depuis `.nvmrc`, installation reproductible avec `npm ci` et cache npm
+- Tests Jest (unitaires, intégration, end-to-end), dont des tests unitaires et d'intégration ajoutés au projet fourni, puis lint ESLint
+- Résultats JUnit publiés directement sur la pull request (`dorny/test-reporter`)
+- Rapport Allure généré à chaque run, et résultats conservés 7 jours en artefacts
 ---
 
 ## L'application
