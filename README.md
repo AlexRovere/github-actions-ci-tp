@@ -1,4 +1,19 @@
-# TP CI/CD
+# TP CI/CD — pipeline GitHub Actions
+
+[![CI](https://github.com/AlexRovere/cicd-tp/actions/workflows/ci.yml/badge.svg)](https://github.com/AlexRovere/cicd-tp/actions/workflows/ci.yml)
+
+TP du cours CI/CD : mettre en place l'intégration continue d'une petite API Node.js fournie par le formateur ([coaxial/cicd-tp](https://github.com/coaxial/cicd-tp)).
+
+**Ma contribution** : le workflow [`.github/workflows/ci.yml`](.github/workflows/ci.yml), construit par pull requests successives.
+
+- Déclenchement sur push et pull request vers `master`
+- Matrice **Ubuntu / Windows / macOS**
+- Version de Node lue depuis `.nvmrc`, installation reproductible avec `npm ci`
+- Tests Jest (unitaires, intégration, end-to-end) puis lint ESLint
+
+---
+
+## L'application
 
 A Node.js application providing a simple greeting service with a REST API. It includes a server built with Express, greeting logic, and comprehensive test
 suites (unit, integration, and end-to-end).
